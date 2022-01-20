@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/5.0.0/math.min.js"></script>
+  <script src="https://cdn.plot.ly/plotly-2.0.0.min.js"></script>
+  <!-- <script src="myMath.js"></script> -->
+  <script src="Laplace1D.js"></script>
+  <script src="Poisson1D.js"></script>
+  <script src="Laplace2D.js"></script>
+  <script src="2DLaplaceLusolve.js"></script>
+  
+  <style>
+    #myDiv {
+      border: solid;
+      border-style: solid;
+      border-radius: 7px;
+    }
+    .myButton {
+      width: 49%;
+    }
+  </style>
+</head>
+
+<body onload="draw_Laplace1D()">
+  <button class="myButton" onclick="draw_Laplace1D()">Laplace 1D</button>
+  <button class="myButton" onclick="draw_Poisson1D()">Poisson 1D</button>
+  <button class="myButton" onclick="draw_Laplace2D()">Laplace 2D Gauss-Seidel</button>
+  <button class="myButton" onclick="draw_Laplace2D_Lusolve()">Laplace 2D Lusolve</button>
+  <div id="myDiv" style="width: 603pt; height: 500pt"></div>
+</body>
+
+</html>
